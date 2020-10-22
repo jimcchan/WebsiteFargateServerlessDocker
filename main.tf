@@ -15,7 +15,7 @@ resource "aws_ecs_service" "ecs_service" {
     deployment_maximum_percent = 200
     deployment_minimum_healthy_percent = 0
     desired_count = 1
-    task_definition = "${aws_ecs_task_definition.ecs_task_definition.family}:${aws_ecs_task_definition.this.revision}"
+    task_definition = "aws_ecs_task_definition.ecs_task_definition.family}:${aws_ecs_task_definition.this.revision"
     
     network_configuration {
         assign_public_ip = true
